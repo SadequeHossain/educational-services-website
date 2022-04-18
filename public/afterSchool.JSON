@@ -1,0 +1,30 @@
+[
+    {
+        "key": "001",
+        "name": "Elementary",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus optio, delectus obcaecati enim rerum molestias! Assumenda, fugiat. Corporis perferendis blanditiis, eligendi at voluptate, quo laboriosam dolore beatae mollitia tenetur ab.",
+        
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-35-1019x552.jpg"
+        
+    },
+   
+    {
+        "key": "002",
+     
+        "name": "Upper Elementary",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus optio, delectus obcaecati enim rerum molestias! Assumenda, fugiat. Corporis perferendis blanditiis, eligendi at voluptate, quo laboriosam dolore beatae mollitia tenetur ab.",
+        
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-35-1019x552.jpg"
+        
+    },
+   
+    {
+        "key": "003",
+        "name": "Junior High",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus optio, delectus obcaecati enim rerum molestias! Assumenda, fugiat. Corporis perferendis blanditiis, eligendi at voluptate, quo laboriosam dolore beatae mollitia tenetur ab.",
+        
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-35-1019x552.jpg"
+        
+    }
+   
+]

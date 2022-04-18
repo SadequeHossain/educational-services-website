@@ -21,8 +21,10 @@ function App() {
       <Container fluid>
         <BrowserRouter>
           <Headers></Headers>
+          <div className="Route-Container">
           <Routes >
             <Route path="/home" element={<Home></Home>} />
+            <Route path="/" element={<Home></Home>} />
             <Route path="/contact" element={<Contactus></Contactus>} />
             <Route path="/courses" element={<Courses></Courses>} />
             <Route path="/about" element={<About></About>} />
@@ -30,6 +32,7 @@ function App() {
 
 
           </Routes>
+          </div>
 
 
 

@@ -1,13 +1,29 @@
-import React from 'react';
-import { Button, Carousel, Col, Container, Figure, Form, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Button, Carousel, Col, Container, Figure, Form, Image, Row } from 'react-bootstrap';
 import './Home.css';
 import sld1 from '../../Images/Slider-1.jpg'
 import sld2 from '../../Images/Slider-2.jpg';
 import stdl1 from '../../Images/StudentLife-1.jpg';
 import stdl2 from '../../Images/StudentLife-2.jpg';
+import qustionImg from '../../Images/Question.jpg';
+import comminityImg from '../../Images/Community-1.jpg';
+import Activities from '../hooks/ActivitiesCard/Activities';
+
+
 
 
 const Home = () => {
+
+    const [activities, SetActivities] = useState([]);
+    useEffect(() => {
+        fetch('afterSchool.JSON')
+            .then(res => res.json())
+            .then(data => SetActivities(data))
+
+    }
+        , [])
+
+    console.log(activities)
     return (
         <div className="home-container">
 
@@ -104,12 +120,15 @@ const Home = () => {
                 </Row>
                 <Container>
                     <Row>
-                        <Col lg={3} xs={12}>Flexible Schedule</Col>
-                        <Col lg={4} xs={12}>After School Programs</Col>
-                        <Col lg={4} xs={12}>Proven Track Record</Col>
+                       {
+
+                           activities.map(activity => <Activities activity={activity}></Activities>)
+                       }
                     </Row>
                 </Container>
             </Container>
+            
+            <Container>
             <Row>
                 <Col lg={6} xs={12}>
                     <small>A Big Family</small>
@@ -120,27 +139,20 @@ const Home = () => {
                     <Button variant="warning">Make an Appointment</Button>
                 </Col>
                 <Col lg={6} xs={12}>
-                    <Figure>
-                        <Figure.Image
-                            width={250}
-                            height={180}
-                            alt="171x180"
-                            src={sld1}
-                        />
-                        <Figure.Caption>
-                            Nulla vitae elit libero, a pharetra augue mollis interdum.
-                        </Figure.Caption>
-                    </Figure>
+                   <Image fluid src={comminityImg} ></Image>
                 </Col>
 
             </Row>
-            <Container>
-
+                 <Col lg={12} xs={12}>
+                     <h1>After School Activities</h1>
+                 </Col>
                 <Row>
-                    <Col lg={12}> After School Program</Col>
-                    <Col lg={3} xs={12}>Flexible Schedule</Col>
-                    <Col lg={4} xs={12}>After School Programs</Col>
-                    <Col lg={4} xs={12}>Proven Track Record</Col>
+                <Row>
+                       {
+
+                           activities.map(activity => <Activities activity={activity}></Activities>)
+                       }
+                    </Row>
                 </Row>
             </Container>
 
@@ -159,7 +171,10 @@ const Home = () => {
 
 
 
-                <Col lg={6} xs={12}>Flexible Schedule</Col>
+                <Col lg={6} xs={12}>
+<Image fluid src={qustionImg}></Image>
+
+                </Col>
                 <Col lg={6} xs={12}>
                     <small>How can we help you?</small>
                     <h1>Have any questions?</h1>
@@ -169,7 +184,7 @@ const Home = () => {
                             <Form.Control type="email" placeholder="name@example.com" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Write your Mesage Here</Form.Label>
+                            <Form.Label>Write your Message Here</Form.Label>
                             <Form.Control as="textarea" rows={3} />
                         </Form.Group>
                     </Form>

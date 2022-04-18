@@ -11,17 +11,17 @@ const NewNavbar = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <NavLink to="/contact">Contact us</NavLink>
-                            <NavLink to="/courses">Courses</NavLink>
-                            <NavLink to="/about">About</NavLink>
-                            <NavLink to="/admission">Admission</NavLink>
-                            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                            <NavLink className="navLink" to="/contact">Contact us</NavLink>
+                            <NavLink className="navLink" to="/courses">Programs</NavLink>
+                            <NavLink className="navLink" to="/about">About</NavLink>
+                            <NavLink className="navLink" to="/admission">Admission</NavLink>
+                            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
+                            </NavDropdown> */}
                         </Nav>
                         <Nav>
                             <Nav.Link href="#deets">More deets</Nav.Link>

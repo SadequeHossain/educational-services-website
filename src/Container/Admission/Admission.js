@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, Col, Container, Row, TabContainer } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row, TabContainer } from 'react-bootstrap';
 import './Admission.css';
+import admissionImg from '../../Images/admission-2.jpg';
+
 const Admission = () => {
     return (
         <Container fluid>
@@ -23,7 +25,7 @@ const Admission = () => {
 
                     </Col>
                     <Col lg={6} sm={12} xs={12}>
-                        <h1>Picture</h1>
+                        <Image fluid src={admissionImg}></Image>
                     </Col>
                 </Row>
             </Container>

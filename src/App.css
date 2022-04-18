@@ -1,8 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
 .App {
   text-align: center;
   height: 100vh;
   padding-bottom: 0px;
   border: 2px solid gold;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Route-Container {
+  border: 5px solid rgb(240, 198, 12);
+  overflow-y: scroll;
+  height: 90vh;
+  padding-bottom: 100px;
 }
 
 div {

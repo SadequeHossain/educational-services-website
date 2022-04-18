@@ -1,5 +1,4 @@
-.home-container{
+.home-container {
     border: 3px solid blue;
-    height:100vh;
-    overflow-y: scroll;
+
 }
