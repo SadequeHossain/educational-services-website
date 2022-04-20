@@ -1,0 +1,11 @@
+.carousel-slider {
+    border: 5px solid red;
+    background-color:lightblue;
+    margin-top:50px;
+}
+
+.accordian-container{
+    /* border: 5px solid red; */
+    margin-top: 100px;
+    color:green;
+}

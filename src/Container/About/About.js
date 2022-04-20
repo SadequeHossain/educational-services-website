@@ -6,6 +6,7 @@ import mission from '../../Images/Mission-1.jpg';
 import Gallery from 'react-photo-gallery';
 import Programms from './Programs/Programms';
 import Image from 'react-bootstrap/Image'
+import Carousel from 'react-grid-carousel';
 const About = () => {
 
 
@@ -112,8 +113,8 @@ const About = () => {
         <Container fluid>
             <Container>
                 <Row>
-                <Col lg={6} xs={12} sm={12} >
-                       <Image fluid src={teacher}></Image>
+                    <Col lg={6} xs={12} sm={12} >
+                        <Image fluid src={teacher}></Image>
                     </Col>
                     <Col lg={6} xs={12} sm={12} >
                         <h5>An Extra ordinary Leader</h5>
@@ -125,13 +126,13 @@ const About = () => {
 
 
                     </Col>
-                   
+
                 </Row>
             </Container>
             <Container>
                 <Row>
 
-                   
+
                     <Col lg={6} xs={12} sm={12} >
                         <h5>Our Goal</h5>
                         <h1>Our Mission Statement</h1>
@@ -178,6 +179,8 @@ const About = () => {
                 </Row>
                 <Button variant="warning">View All Programms</Button>
             </Container>
+
+
 
         </Container>
     );

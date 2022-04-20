@@ -13,32 +13,32 @@ import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 import About from './Container/About/About';
 import Admission from './Container/Admission/Admission';
+import NotFound from './Container/notFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
 
-      <Container fluid>
-        <BrowserRouter>
+      <Container fluid >
+        <BrowserRouter className="app-Container">
           <Headers></Headers>
-          <div className="Route-Container">
-          <Routes >
-            <Route path="/home" element={<Home></Home>} />
-            <Route path="/" element={<Home></Home>} />
-            <Route path="/contact" element={<Contactus></Contactus>} />
-            <Route path="/courses" element={<Courses></Courses>} />
-            <Route path="/about" element={<About></About>} />
-            <Route path="/admission" element={<Admission></Admission>} />
+          <div fluid className="Route-Container">
+            <Routes  >
+              <Route path="/home" element={<Home></Home>} />
+              <Route path="/" element={<Home></Home>} />
+              <Route path="/contact" element={<Contactus></Contactus>} />
+              <Route path="/courses" element={<Courses></Courses>} />
+              <Route path="/about" element={<About></About>} />
+              <Route path="/admission" element={<Admission></Admission>} />
+              <Route path="*" element={<NotFound></NotFound>} />
 
 
-          </Routes>
+            </Routes>
           </div>
 
-
-
-          {/* <Container fluid>
-          <Footer></Footer>
-        </Container> */}
+          <Container fluid className="container-footer">
+            <Footer></Footer>
+          </Container>
         </BrowserRouter>
       </Container>
     </div>

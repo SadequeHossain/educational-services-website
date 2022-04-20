@@ -3,6 +3,7 @@ import { Button, Col, Container, Image, Row, TabContainer } from 'react-bootstra
 import './Admission.css';
 import admissionImg from '../../Images/admission-2.jpg';
 
+
 const Admission = () => {
     return (
         <Container fluid>
@@ -41,6 +42,8 @@ const Admission = () => {
 
 
             </Row>
+
+
 
 
         </Container>

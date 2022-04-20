@@ -5,9 +5,9 @@ const Programms = (props) => {
 
     const{img,name, description}=props.program
     return (
-        <Col lg={4} xs={12} sm={12}>
+       
 
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem', margin:'10px' }}>
                 <Card.Img variant="top" src={img}/>
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
@@ -17,7 +17,7 @@ const Programms = (props) => {
 
                 </Card.Body>
             </Card>
-        </Col>
+       
 
     );
 };
