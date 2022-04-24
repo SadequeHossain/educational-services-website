@@ -6,96 +6,69 @@ import mission from '../../Images/Mission-1.jpg';
 import Gallery from 'react-photo-gallery';
 import Programms from './Programs/Programms';
 import Image from 'react-bootstrap/Image'
-import Carousel from 'react-grid-carousel';
+import { NavLink } from 'react-router-dom';
+
 const About = () => {
 
 
     const photos = [
         {
-            src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/19528/220-SM938128.jpg",
             width: 4,
             height: 3
         },
         {
-            src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/19528/220-SM938163.jpg",
             width: 1,
             height: 1
         },
         {
-            src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/12194/220-SM382899.jpg",
             width: 3,
             height: 4
         },
         {
-            src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/18455/220-ER826779.jpg",
             width: 3,
             height: 4
         },
         {
-            src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/17072/220-SM743804.jpg",
             width: 3,
             height: 4
         },
         {
-            src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/17072/120-SM743788.jpg",
             width: 4,
             height: 3
         },
         {
-            src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/15127/20-SM594043.jpg",
             width: 3,
             height: 4
         },
         {
-            src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/14757/20-SM559790.jpg",
             width: 4,
             height: 3
         },
         {
-            src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/10582/19-SM299684.jpg",
             width: 4,
             height: 3
         },
         {
-            src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/15930/220-SM660218.jpg",
             width: 3,
             height: 4
         },
         {
-            src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
-            width: 4,
-            height: 3
-        },
-        {
-            src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
-            width: 4927,
-            height: 1000
-        },
-        {
-            src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
-            width: 4,
-            height: 3
-        },
-        {
-            src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
-            width: 4,
-            height: 3
-        },
-        {
-            src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
-            width: 4,
-            height: 3
-        },
-        {
-            src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-            width: 4,
-            height: 3
-        },
-        {
-            src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
+            src: "https://d3nn873nee648n.cloudfront.net/900x600/14843/220-SM564499.jpg",
             width: 4,
             height: 3
         }
+
+
     ];
 
     const [programms, SetProgramms] = useState([]);
@@ -112,38 +85,48 @@ const About = () => {
     return (
         <Container fluid>
             <Container>
-                <Row>
+
+                <Row className="about-intro">
                     <Col lg={6} xs={12} sm={12} >
                         <Image fluid src={teacher}></Image>
                     </Col>
-                    <Col lg={6} xs={12} sm={12} >
-                        <h5>An Extra ordinary Leader</h5>
-                        <h1>Head of School</h1>
-                        <h1>Welcome</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque inventore reprehenderit quibusdam earum ab qui libero nulla itaque? Facere suscipit quibusdam deleniti magnam placeat officiis esse minima in rerum culpa odit doloremque ut velit necessitatibus architecto, reprehenderit saepe eaque debitis itaque ipsam. Aspernatur odit corrupti at. Perspiciatis nesciunt optio iusto?</p>
+                    <Col lg={6} xs={12} sm={12} className="text-container">
+                        <div>
+                            <h5>An Extra ordinary Leader</h5>
+                            <h1>Head of School</h1>
+                            <h1>Welcome</h1>
+                            <p>Dear Families, <br />
 
-                        <h6> Mrs. X, <small>Head of School</small> </h6>
+                                Welcome to GreenView , and thank you for your interest in our nationally-ranked, world-acclaimed academic program for your child's education.
+
+                                Our approach is simple. We use a renowned STEM-focused liberal arts curriculum, while fully supporting students by responding to every need they have. We hire bright, passionate teachers to teach it while instilling a lifelong love of learning to each child who walks through our doors.</p>
+
+                            <h6> Mrs. Sandra, <small>Head of School</small> </h6>
+                        </div>
 
 
                     </Col>
 
                 </Row>
+
             </Container>
             <Container>
-                <Row>
+                <Row className="about-intro">
 
 
-                    <Col lg={6} xs={12} sm={12} >
-                        <h5>Our Goal</h5>
-                        <h1>Our Mission Statement</h1>
+                    <Col lg={6} xs={12} sm={12} className="text-container" >
+                        <div>
+                            <h5>Our Goal</h5>
+                            <h1>Our Mission Statement</h1>
 
-                        <p>
-                            GreenView identifies and develops the intellectual and creative talents of a diverse group of students. Within supportive and caring college preparatory environment, students are encouraged to achieve their finest in academics, athletics and the arts.
+                            <p>
+                                GreenView identifies and develops the intellectual and creative talents of a diverse group of students. Within supportive and caring college preparatory environment, students are encouraged to achieve their finest in academics, athletics and the arts.
 
-                            Our ultimate goal is to teach students to live humanely within the community in order to prepare them to meet the demands and responsibilities of the future in the broader world.
+                                Our ultimate goal is to teach students to live humanely within the community in order to prepare them to meet the demands and responsibilities of the future in the broader world.
 
 
-                        </p>
+                            </p>
+                        </div>
                     </Col>
                     <Col lg={6} xs={12} sm={12} >
                         <Image fluid src={mission} alt="" />
@@ -172,12 +155,17 @@ const About = () => {
                 </Col>
             </Row>
             <Container>
-                <Row>
+                <Row >
+
                     {
                         programms.map(program => <Programms program={program}></Programms>)
                     }
+
                 </Row>
-                <Button variant="warning">View All Programms</Button>
+
+                <NavLink className="navLink" to="/courses"><Button variant="warning">View All Programms</Button></NavLink>
+
+                
             </Container>
 
 

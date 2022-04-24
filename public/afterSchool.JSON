@@ -1,29 +1,41 @@
 [
     {
         "key": "001",
-        "name": "Elementary",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus optio, delectus obcaecati enim rerum molestias! Assumenda, fugiat. Corporis perferendis blanditiis, eligendi at voluptate, quo laboriosam dolore beatae mollitia tenetur ab.",
+        "day": "Monday/Wednesday",
+        "name": "Dance Club",
+        "description": "We have most qualified dance master",
         
-        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-35-1019x552.jpg"
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-44-743x552.jpg"
         
     },
    
     {
         "key": "002",
-     
-        "name": "Upper Elementary",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus optio, delectus obcaecati enim rerum molestias! Assumenda, fugiat. Corporis perferendis blanditiis, eligendi at voluptate, quo laboriosam dolore beatae mollitia tenetur ab.",
+        "day": "Monday",
+          
+        "name": "Tennis",
+        "description": "The most popular sport at school is Tennis",
         
-        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-35-1019x552.jpg"
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-43-743x552.jpg"
         
     },
    
     {
         "key": "003",
-        "name": "Junior High",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus optio, delectus obcaecati enim rerum molestias! Assumenda, fugiat. Corporis perferendis blanditiis, eligendi at voluptate, quo laboriosam dolore beatae mollitia tenetur ab.",
+        "name": "Dramatic Arts",
+        "day": "Friday/Tuesdy",
+        "description": "Drama introduces students to a world of wonder and play",
         
-        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-35-1019x552.jpg"
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-46-743x552.jpg"
+        
+    },
+    {
+        "key": "004",
+        "name": "Dramatic Arts",
+        "day": "Friday/Tuesdy",
+        "description": "Drama introduces students to a world of wonder and play",
+        
+        "img": "http://greenville.ancorathemes.com/wp-content/uploads/2017/03/image-46-743x552.jpg"
         
     }
    

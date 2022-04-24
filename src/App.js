@@ -10,16 +10,17 @@ import Home from './Container/Home/Home';
 import Contactus from '../src/Container/Contactus/Contactus'
 import Courses from '../src/Container/Courses/Courses'
 import { Container } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel'
+
 import About from './Container/About/About';
 import Admission from './Container/Admission/Admission';
 import NotFound from './Container/notFound/NotFound';
+import Submission from './Container/Submission/Submission';
 
 function App() {
   return (
     <div className="App" >
 
-      <Container fluid >
+     
         <BrowserRouter className="app-Container">
           <Headers></Headers>
           <div fluid className="Route-Container">
@@ -31,6 +32,7 @@ function App() {
               <Route path="/about" element={<About></About>} />
               <Route path="/admission" element={<Admission></Admission>} />
               <Route path="*" element={<NotFound></NotFound>} />
+              <Route path="/submission" element={<Submission></Submission>} />
 
 
             </Routes>
@@ -40,7 +42,7 @@ function App() {
             <Footer></Footer>
           </Container>
         </BrowserRouter>
-      </Container>
+      
     </div>
   );
 }

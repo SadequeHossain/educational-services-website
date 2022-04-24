@@ -1,11 +1,12 @@
 
 import React from 'react';
 import './Contactus.css'
-import { Col, Container, Form, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Contactus = () => {
     return (
-        <Container>
+        <Container className="titleContainer">
             <Row>
                 <Col lg={12} md={12} sm={12}>
                     <h2> GreenView School</h2>
@@ -38,6 +39,10 @@ const Contactus = () => {
                                     <Form.Label>Write your Mesage Here</Form.Label>
                                     <Form.Control as="textarea" rows={3} />
                                 </Form.Group>
+
+
+                                <NavLink to="/submission"><Button type="submit" variant="warning">Submit</Button></NavLink>
+
                             </Form>
 
                         </Col>

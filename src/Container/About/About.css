@@ -1,0 +1,14 @@
+.about-intro{
+    margin:100px 0 100px 0;
+}
+
+.text-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 50px 50px;
+}
+
+.text-container p{
+    text-align: justify;
+}

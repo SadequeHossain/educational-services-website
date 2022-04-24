@@ -4,7 +4,7 @@ import { Button, Card, Col } from 'react-bootstrap';
 const CourseCard = (props) => {
     const { img, name } = props.course
     return (
-        <div>
+        <Col lg={4} sm={12} xs={12}>
            
                 <Card style={{ width: '18rem', margin:"10px" }}>
                     <Card.Img variant="top" src={img} />
@@ -14,11 +14,11 @@ const CourseCard = (props) => {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="warning">Learn More</Button>
+                        <Button variant="success">Learn More</Button>
                     </Card.Body>
                 </Card>
             
-        </div>
+        </Col>
     );
 };
 

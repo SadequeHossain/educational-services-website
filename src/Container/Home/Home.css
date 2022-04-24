@@ -1,4 +1,110 @@
 .home-container {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
+    /* padding-top:50px */
+    padding: 0;
+}
 
+.title-img {
+    width: 100%;
+    height: 75vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.titleSlid-container {
+    /* border: 2px solid black; */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.titleContainer {
+    /* border: 2px solid rgb(248, 145, 10); */
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+    box-shadow: 5px 5px rgba(5, 5, 17, 0.952), 10px 10px rgb(250, 144, 6);
+    margin-bottom: 70px;
+    background-color: rgba(211, 211, 211, 0.24);
+    padding: 10px;
+    margin-top: 100px;
+
+}
+
+.titleContainer:hover {
+    box-shadow: 5px 5px rgba(5, 5, 17, 0.952), 10px 10px rgb(250, 144, 6), 15px 15px 30px green;
+    margin-bottom: 80px;
+
+}
+
+
+
+.titleContainer h1 {
+    /* color: #f7b309; */
+    color: rgb(241, 149, 11);
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px;
+}
+
+.slider-description {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.multi-carousel {
+    /* border:2px solid red; */
+    padding: 50px 0px 50px 0px;
+    background-color: rgb(17, 122, 101);
+}
+
+.carouselitem {
+
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.carouselitem:hover {
+    box-shadow: 5px 8px 10px lightgray;
+    margin: 20px
+}
+
+.noticeboard {
+    color: white;
+
+}
+
+.welcomeTitle {
+    /* border: 2px solid red; */
+    margin: 50px 30px 50px 30px;
+    box-shadow: 5px 5px rgba(5, 5, 17, 0.952), 10px 10px rgb(250, 144, 6);
+}
+
+#community-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activities-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.message-container {
+    margin-bottom: 0;
+    border: 1px solid red;
+    background-color: black;
+    padding: 100px;
+    
+}
+
+.message-container Image {
+    border: 2px solid white;
+}
+
+.title-slide{
+    font-size:4em;
 }
